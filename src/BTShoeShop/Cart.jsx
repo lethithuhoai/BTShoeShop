@@ -55,6 +55,7 @@ const Cart = ({ carts, handleCartQuantity, handleDeleteCart }) => {
                         <td>
                           <button
                             className="btn btn-outline-success"
+                            style={{ marginRight: "10px" }}
                             onClick={() => {
                               handleCartQuantity(cart.id, 1);
                             }}
@@ -64,6 +65,7 @@ const Cart = ({ carts, handleCartQuantity, handleDeleteCart }) => {
                           <span className="nx-3"> {cart.cartQuantity}</span>
                           <button
                             className="btn btn-outline-danger"
+                            style={{ marginLeft: "10px" }}
                             onClick={() => {
                               handleCartQuantity(cart.id, -1);
                             }}
